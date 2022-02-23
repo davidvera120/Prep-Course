@@ -13,10 +13,17 @@ const nuevoBool = true;
 const nuevaResta = 10 - 5 === 5;
 
 // Resuelve el siguiente problema matemático:
+<<<<<<< HEAD
 const nuevaMultiplicacion = 10 * 10 === 40 ;
 
 // Resuelve el siguiente problema matemático:
 const nuevoModulo = 21 % 5 === 6;
+=======
+const nuevaMultiplicacion = 10 * 4 === 40 ;
+
+// Resuelve el siguiente problema matemático:
+const nuevoModulo = 21 % 5 === 7;
+>>>>>>> 890606ca0a6aa4d5a901bdc78a2f1a16cb8dddca
 
 
 // En los próximos 22 problemas, deberás completar la función.
@@ -28,14 +35,15 @@ const nuevoModulo = 21 % 5 === 6;
 function devolverString(str) {
   // "Return" la string provista: str
   // Tu código:
-  
+  return str;
 }
 
 function suma(x, y) {
   // "x" e "y" son números
   // Suma "x" e "y" juntos y devuelve el valor
   // Tu código:
-  
+  var suma = x + y;
+  return suma;
 }
 
 function resta(x, y) {
