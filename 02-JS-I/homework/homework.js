@@ -269,10 +269,11 @@ function esVocal(letra){
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
   var numeroletras = letra.length();
+
 if (numeroletras > 1){
   var mensaje2 = 'Dato incorrecto';
 }
-else if (letra == 'a' || letra == 'e' || letra == 'i' || letra == 'o' || letra =='u' )
+if (letra == 'a' || letra == 'e' || letra == 'i' || letra == 'o' || letra =='u' )
 {
       var mensaje2 = 'Es vocal';
  }
