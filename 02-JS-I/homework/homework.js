@@ -170,12 +170,14 @@ function redondearNumero(num) {
   // Redondea "num" al entero más próximo y devuélvelo
   // Tu código:
   var redondeo = Math.round(num);
+  return redondeo;
 }
 
 function redondearHaciaArriba(num) {
   // Redondea "num" hacia arriba (al próximo entero) y devuélvelo
   // Tu código:
   var redondeo_arriba = Math.ceil(num);
+  return redondeo_arriba;
 } 
 function numeroRandom() {
   //Generar un número al azar entre 0 y 1 y devolverlo
@@ -189,9 +191,14 @@ function esPositivo(numero) {
   //Si el número es positivo, devolver ---> "Es positivo"
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
- if(numero >= 0){
+ if(numero > 0){
    var mensaje = 'es positivo';
- } else
+ }
+ else if (numero == 0)
+ {
+   var mensaje = false;
+ }
+ else
  {
    var mensaje = 'es negativo';
  }
@@ -210,7 +217,7 @@ function combinarNombres(nombre, apellido) {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código:
-  var nombrecompleto = nombre + apellido;
+  var nombrecompleto = nombre + ' ' + apellido;
   return nombrecompleto;
 }
 
@@ -218,7 +225,7 @@ function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
-var saludo = 'hola' + nombre + '!';
+var saludo = 'hola' + ' ' + nombre + '!';
 return saludo;  
 }
 
