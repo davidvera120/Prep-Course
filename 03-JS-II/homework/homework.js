@@ -13,7 +13,7 @@ var mayor = x;
   {
 var mayor = y;
   }
-  else if (x == y)
+  else if (x === y)
   {
 var mayor = x;
   }
@@ -40,10 +40,10 @@ function conection(status) {
   //Cuando el estado es igual a 2, el usuario está "Away"
   //De lo contrario, presumimos que el usuario está "Offline"
   //Devolver el estado de conexión de usuario en cada uno de los casos.
-  if (status == 1){
+  if (status === 1){
     var msj2 = 'Online';
   }
-  else if (status == 2){
+  else if (status === 2){
     var msj2 = 'Away';
   }
 else{
@@ -284,5 +284,4 @@ module.exports = {
   tablaDelSeis,
   tieneTresDigitos,
   doWhile
-}
-};  
+};
