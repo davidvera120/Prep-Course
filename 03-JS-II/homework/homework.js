@@ -61,7 +61,7 @@ function saludo(idioma) {
   // Tu código:
   if (idioma === 'aleman')
   {
-var msj3 = 'Guten tag!';
+var msj3 = 'Guten Tag!';
   }
   else if (idioma === 'mandarin')
   {
@@ -69,11 +69,11 @@ var msj3 = 'Guten tag!';
   }
   else if (idioma ==='ingles')
   {
-  var msj3 = 'hello!'; 
+  var msj3 = 'Hello!'; 
   }
   else  
   {
-   var msj3 = 'hola!'; 
+   var msj3 = 'Hola!'; 
   }
   return msj3;
 }
@@ -86,6 +86,20 @@ function colors(color) {
   //En caso que el color recibido sea "orange", devuleve --> "This is orange"
   //Caso default: devuelve --> "Color not found"
   //Usar el statement Switch.
+  var colormensaje;
+  switch (color)
+  {
+    case 'blue': colormensaje = 'This is blue';
+    break;
+    case 'red': colormensaje = 'This is red';
+    break;
+    case 'green': colormensaje = 'This is green';
+    break;
+    case 'orange': colormensaje = 'This is orange';
+    break;
+    default: colormensaje = 'Color not found';
+  }
+  return colormensaje;
 }
 
 function esDiezOCinco(numero) {
@@ -136,7 +150,21 @@ function fizzBuzz(numero) {
   // Si "numero" es divisible entre 5, devuelve "buzz"
   // Si "numero" es divisible entre 3 y 5 (ambos), devuelve "fizzbuzz"
   // De lo contrario, devuelve el numero
-  
+
+ if (numero % 3 === 0){
+var msj7 = 'fizz';
+ } 
+ else if (numero % 5 === 0){
+   var msj7 = 'buzz';
+ } 
+ else if ((numero % 3 === 0)&&(numero % 5 === 0))
+ {
+   var msj7 = 'fizzbuzz';
+ }
+ else{
+   var msj7 = numero;
+ }
+return msj7;
 }
 
 function operadoresLogicos(num1, num2, num3) {
@@ -146,6 +174,7 @@ function operadoresLogicos(num1, num2, num3) {
   //Si num3 es más grande que num1 y num2, aumentar su valor en 1 y retornar el nuevo valor.
   //0 no es ni positivo ni negativo. Si alguno de los argumentos es 0, retornar "Error".
   //Si no se cumplen ninguna de las condiciones anteriores, retornar false. 
+  
 }
 
 function esPrimo(numero) {
