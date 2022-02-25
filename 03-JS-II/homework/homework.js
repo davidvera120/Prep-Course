@@ -5,12 +5,33 @@ function obtenerMayor(x, y) {
   // Devuelve el número más grande
   // Si son iguales, devuelve cualquiera de los dos
   // Tu código:
-}
+  if (x > y)
+  {
+var mayor = x;
+  }
+  else if (x < y)
+  {
+var mayor = y;
+  }
+  else if (x == y)
+  {
+var mayor = x;
+  }
+  return mayor;
+  }
+
 
 function mayoriaDeEdad(edad) {
   //Determinar si la persona según su edad puede ingresar a un evento.
   //Si tiene 18 años ó más, devolver --> "Allowed"
   //Si es menor, devolver --> "Not allowed"
+  if (edad >= 18){
+    var msj = 'Allowed';
+  }
+  else{
+    var msj ='Not allowed';
+  }
+  return msj;
 }
   
 function conection(status) {
@@ -19,6 +40,16 @@ function conection(status) {
   //Cuando el estado es igual a 2, el usuario está "Away"
   //De lo contrario, presumimos que el usuario está "Offline"
   //Devolver el estado de conexión de usuario en cada uno de los casos.
+  if (status == 1){
+    var msj2 = 'Online';
+  }
+  else if (status == 2){
+    var msj2 = 'Away';
+  }
+else{
+  var msj2 = 'Offline';
+}
+return msj2;
 }
 
 function saludo(idioma) {
@@ -28,6 +59,23 @@ function saludo(idioma) {
   // Si "idioma" es "ingles", devuelve "Hello!"
   // Si "idioma" no es ninguno de los anteiores o es `undefined` devuelve "Hola!"
   // Tu código:
+  if (idioma === 'aleman')
+  {
+var msj3 = 'Guten tag!';
+  }
+  else if (idioma === 'mandarin')
+  {
+  var msj3 = 'Ni Hao!';  
+  }
+  else if (idioma ==='ingles')
+  {
+  var msj3 = 'hello!'; 
+  }
+  else  
+  {
+   var msj3 = 'hola!'; 
+  }
+  return msj3;
 }
 
 function colors(color) {
@@ -44,12 +92,26 @@ function esDiezOCinco(numero) {
   // Devuelve "true" si "numero" es 10 o 5
   // De lo contrario, devuelve "false"
   // Tu código:
+  if (numero === 10 || numero === 5){
+    var msj4 = true;
+  }
+  else{
+    var msj4 =false;
+  }
+  return msj4;
 }
 
 function estaEnRango(numero) {
   // Devuelve "true" si "numero" es menor que 50 y mayor que 20
   // De lo contrario, devuelve "false"
   // Tu código:
+  if ((numero < 50) && (numero > 20)){
+    var msj5 = true;
+  }
+  else{
+    var msj5 =false;
+  }
+  return msj5;
 }
 
 function esEntero(numero) {
@@ -60,6 +122,13 @@ function esEntero(numero) {
   // De lo contrario, devuelve "false"
   // Pista: Puedes resolver esto usando `Math.floor`
   // Tu código:
+  if (numero % 1 === 0){
+    var msj6 = true;
+  }
+  else{
+    var msj6 =false;
+  }
+  return msj6;
 }
 
 function fizzBuzz(numero) {
@@ -67,6 +136,7 @@ function fizzBuzz(numero) {
   // Si "numero" es divisible entre 5, devuelve "buzz"
   // Si "numero" es divisible entre 3 y 5 (ambos), devuelve "fizzbuzz"
   // De lo contrario, devuelve el numero
+  
 }
 
 function operadoresLogicos(num1, num2, num3) {
@@ -103,6 +173,7 @@ function tablaDelSeis(){
 function tieneTresDigitos(numero){
   //Leer un número entero y retornar true si tiene 3 dígitos. Caso contrario, retorna false.
   //Escribe tu código aquí
+
   
 }
 
