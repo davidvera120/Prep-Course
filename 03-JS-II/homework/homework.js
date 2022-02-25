@@ -206,7 +206,8 @@ function esPrimo(numero) {
   for (var i=1; i<=numero; i++)
   {
    if (numero % i == 0) 
-   { contador++;
+   { 
+     contador++;
   }
 
   if(contador <= 2)
@@ -217,9 +218,9 @@ var msj9 = true;
   {
  var msj9 = false;
   }
-  return msj9;
 }
-
+return msj9;
+}
 function esVerdadero(valor){
   //Escribe una función que reciba un valor booleano y retorne “Soy verdadero” 
   //si su valor es true y “Soy falso” si su valor es false.
