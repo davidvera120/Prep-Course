@@ -13,6 +13,7 @@ function crearGato(nombre, edad) {
       console.log('Meow!');
     } 
   }
+  objeto.decirMeow();
  return objeto; 
 }
 
