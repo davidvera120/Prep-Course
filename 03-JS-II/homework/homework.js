@@ -13,7 +13,7 @@ var mayor = x;
   {
 var mayor = y;
   }
-  else if (x === y)
+  else if (x == y)
   {
 var mayor = x;
   }
@@ -106,7 +106,7 @@ function esDiezOCinco(numero) {
   // Devuelve "true" si "numero" es 10 o 5
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (numero === 10 || numero === 5){
+  if (numero == 10 || numero == 5){
     var msj4 = true;
   }
   else{
